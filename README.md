@@ -1,1 +1,1 @@
-"# Auto-YT-Shorts-Generator" 
+# Auto-YT-Shorts-Generator
