@@ -27,3 +27,11 @@ def casual(modal, question):
 	model = genai.GenerativeModel(modal)
 	response = model.generate_content(question)
 	return response
+
+def select_bgv_a():
+	x_factor= random.choice(os.listdir("osc_background_clips"))
+	print(x_factor)
+
+def select_bgm_a():
+	x_factor= random.choice(os.listdir("lofi_bgm"))
+	print(x_factor)
