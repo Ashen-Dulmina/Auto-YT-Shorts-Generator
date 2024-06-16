@@ -1,5 +1,7 @@
 from moviepy.editor import VideoFileClip, TextClip, AudioFileClip, CompositeAudioClip, afx
 	
+print("Movie PY Wakeup Call -- OKI !")
+
 def EditVid(background_clip, text, text_duration, text_color, text_size, background_song, background_voice):
 	init_clip_0 = VideoFileClip(background_clip)
 	txt_added_clip = TextClip(text,fontsize=text_size,color=text_color).set_pos('center').set_duration(text_duration)

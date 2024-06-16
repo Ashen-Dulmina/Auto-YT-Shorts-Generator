@@ -11,9 +11,9 @@ def getFact():
 	return cat_fact
 
 def select_bgv_c():
-	x_factor= random.choice(os.listdir("cat_background_clips"))
-	print(x_factor)
+	x_factor= random.choice(os.listdir("cat_background_clips"))#prints the function
+	return x_factor
 
 def select_bgm_c():
-	x_factor= random.choice(os.listdir("cat_bgm"))
-	print(x_factor)
+	y_factor= random.choice(os.listdir("cat_bgm"))#fix this 24/6/16 done 4 the day
+	return y_factor
