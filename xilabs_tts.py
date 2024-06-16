@@ -1,11 +1,17 @@
 import requests
 import json
 
-#not tested
+# ̶n̶o̶t̶  tested # yeah i tested it
 
 print("Eleven Labs TTS Wakeup Call -- OKI !")
 
-XI_API_KEY = '97db27735cd91bdc0220fa836fb0e8eb'
+
+def get_key(): #-------WORKS-------#
+	f = open("xilabs_api_key.txt", "r")# --- Copied the code from aother file edit later # hehe Later ME: Code works no need to edit
+	key = f.read()
+	return key
+
+XI_API_KEY = get_key()
 
 def ListXIVoices():
 	pull = 'https://api.elevenlabs.io/v1/voices'
