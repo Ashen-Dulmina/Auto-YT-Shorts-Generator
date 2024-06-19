@@ -5,11 +5,21 @@ import json
 
 print("Eleven Labs TTS Wakeup Call -- OKI !")
 
+#get all keys into one file [6/18]
+#all keys are stored in json format in index.json[6/19]
 
 def get_key(): #-------WORKS-------#
-	f = open("xilabs_api_key.txt", "r")# --- Copied the code from aother file edit later # hehe Later ME: Code works no need to edit
-	key = f.read()
+	file = open("keys.json", 'r')
+	fjs = json.load(file)
+	key = fjs['xi_labs_api_key']
 	return key
+
+#default voice is eva can be changed at index.json : property = 'xi_voice_id'
+def defaultVoice():
+	filev = open("keys.json", 'r')
+	fjsv = json.load(filev)
+	voice = fjsv['xi_voice_id']
+	return voice
 
 XI_API_KEY = get_key()
 
